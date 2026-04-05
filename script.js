@@ -1,3 +1,13 @@
+// Highlight "Grow Smarter" text without animation
+document.addEventListener('DOMContentLoaded', () => {
+    const heroTitle = document.querySelector('.hero-title');
+    if (heroTitle) {
+        const originalText = heroTitle.textContent;
+        const highlightedText = originalText.replace('Grow Smarter', '<span class="highlight-text">Grow Smarter</span>');
+        heroTitle.innerHTML = highlightedText;
+    }
+});
+
 // Portfolio Filter Functionality
 document.addEventListener('DOMContentLoaded', () => {
     const filterBtns = document.querySelectorAll('.filter-btn');
@@ -293,33 +303,6 @@ document.querySelectorAll('.service-card').forEach(card => {
     card.addEventListener('mouseleave', function() {
         this.style.transform = 'translateY(0) scale(1)';
     });
-});
-
-// Add typing effect to hero title
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Initialize typing effect when page loads
-window.addEventListener('load', () => {
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const originalText = heroTitle.innerHTML;
-        setTimeout(() => {
-            typeWriter(heroTitle, originalText, 50);
-        }, 500);
-    }
 });
 
 // Add particle effect to hero section (optional enhancement)

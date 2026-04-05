@@ -31,7 +31,6 @@
     font-weight: 700;
     position: relative;
     display: inline-block;
-    animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
@@ -51,7 +50,7 @@
 }
 
 .logo-img {
-    height: 100px;
+    height: 120px;
     width: auto;
     max-width: 180px;
     object-fit: contain;
