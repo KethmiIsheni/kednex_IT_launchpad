@@ -50,7 +50,7 @@
 }
 
 .logo-img {
-    height: 120px;
+    height: 50px;
     width: auto;
     max-width: 180px;
     object-fit: contain;
@@ -317,22 +317,29 @@ h1, h2, h3, h4 {
     box-shadow: var(--shadow-lg);
     animation: float 6s ease-in-out infinite;
 }
-
+/* floating icons */
 .floating-card:nth-child(1) {
-    top: 20%;
+    top: 10%;
     left: 10%;
     animation-delay: 0s;
 }
 
 .floating-card:nth-child(2) {
     top: 50%;
-    right: 20%;
+    right: 10%;
     animation-delay: 2s;
 }
 
 .floating-card:nth-child(3) {
     bottom: 20%;
     left: 30%;
+    animation-delay: 4s;
+}
+
+
+.floating-card:nth-child(4) {
+    bottom: 60%;
+    right: 30%;
     animation-delay: 4s;
 }
 
